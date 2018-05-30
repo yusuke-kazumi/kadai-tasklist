@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Task;
+use App\task;
 
 class TasksController extends Controller
 {
@@ -16,7 +16,12 @@ class TasksController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
+        $tasks = Task::all();
+
+        return view('tasks.index', [
+            'tasks' => $tasks,
+        ]);
     
     /**
      * Show the form for creating a new resource.
