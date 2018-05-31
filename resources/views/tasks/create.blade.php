@@ -2,15 +2,12 @@
 
 @section('content')
 
-    <h1>メッセージ新規作成ページ</h1>
+    <h1>task新規作成ページ</h1>
 
     {!! Form::model($task, ['route' => 'tasks.store']) !!}
 
-        {!! Form::label('content', 'メッセージ:') !!}
+        {!! Form::label('content', 'tasklist:') !!}
         {!! Form::text('content') !!}
-    {{ '<p style="color: red;">When passed through htmlentities function</p>' }}
-    {!! '<p style="color: red;">When not passed through htmlentities function</p>' !!}
-
 
         {!! Form::submit('投稿') !!}
 
