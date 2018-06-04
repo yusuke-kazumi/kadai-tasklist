@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>id = {{ $task->id }} のtask細ページ</h1>
+    <h1>id = {{ $task->id }} のtask詳細ページ</h1>
 
     <p>ステータス:{{ $task->status }}</p>
     <p>タスク:{{$task->content}}</p>
